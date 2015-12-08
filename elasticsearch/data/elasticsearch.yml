@@ -1,0 +1,5 @@
+script.disable_dynamic: true
+cluster.name: bugsearch
+path:
+  logs: /usr/share/elasticsearch/data/log
+  data: /usr/share/elasticsearch/data/data
