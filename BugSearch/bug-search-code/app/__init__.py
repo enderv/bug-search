@@ -1,11 +1,17 @@
 __author__ = 'Chris'
+import os
+import sys
+
 from flask import Flask, Blueprint
+
+
+#To fix imports below Sometimes this is needed
+sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
 from flask_restful import Api
 
 app = Flask(__name__)
 api_bp = Blueprint('api', __name__)
 
-import os
 if os.environ['PYTHON_ENV'] == 'local':
     app.config.from_object('config.LocalConfig')
 else:
