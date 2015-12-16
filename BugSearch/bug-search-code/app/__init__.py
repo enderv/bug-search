@@ -29,4 +29,6 @@ from app.bug_search.controllers import bug_search_module
 app.register_blueprint(bug_search_module)
 
 if __name__ == '__main__':
-    app.run()
+    print("starting")
+    app.run('0.0.0.0', 5000)
+    print("app is running")
