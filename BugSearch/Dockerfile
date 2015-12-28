@@ -9,5 +9,3 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /usr/src/
 ENV PYTHON_ENV=docker
 CMD [ "python", "/usr/src/bug-search-code/app/__init__.py"]
-
-EXPOSE 5000

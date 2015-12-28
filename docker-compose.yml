@@ -1,0 +1,23 @@
+elasticsearch:
+  restart: always
+  build: ./elasticsearch
+  ports:
+    - "9200:9200"
+  expose:
+    - "9200"
+    - "9300"
+  volumes_from:
+    - data
+bugsearch:
+  restart: always
+  build: ./BugSearch
+  ports:
+    - "5000:5000"
+  links:
+    - elasticsearch
+data:
+  image: java:8-jre
+  volumes:
+    - "/data"
+
+
