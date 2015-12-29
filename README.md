@@ -1,11 +1,11 @@
 # bug-search
 
 Simple bug-search API using Elasticsearch to store bugs. Would be useful as a middleware to help limit duplicate bugs.
-
+Based off [BugParty](https://bitbucket.org/abram/bugparty/src/b2d1909ae173?at=elasticsearch)
 ### Tech
 
-* [ElasticSearch] - HTML enhanced for web apps!
-* [Flask] - awesome web-based text editor
+* [ElasticSearch] - Search!
+* [Flask] - Python web framework
 
 ### Installation
 
@@ -15,10 +15,6 @@ You need docker-compose
 docker-compose build
 docker-compose up
 ```
-
-### Docker, N|Solid and NGINX
-
-More details coming soon.
 
 #### docker-compose.yml
 
